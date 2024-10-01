@@ -2,7 +2,7 @@
   "profiles": {
     "SorteoTorneo": {
       "commandName": "Project",
-      "commandLineArgs": "\"C:\\Users\\Matias\\Desktop\\mundial de canciones\\canciones.json\" 2"
+      "commandLineArgs": "1 \"C:\\Users\\Matias\\Desktop\\mundial de canciones\\Primeros.json\" \"C:\\Users\\Matias\\Desktop\\mundial de canciones\\Segundos.json\" 1"
     }
   }
 }

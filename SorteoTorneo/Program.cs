@@ -10,7 +10,7 @@ if (args.Length == 0)
     return;
 }
 Funciones _funciones = new Funciones();
-if (args[1] == "0")
+if (args[0] == "0")
 {
     // Leer la ruta del archivo desde el primer argumento
     string filePath = args[1];
@@ -70,7 +70,7 @@ if (args[1] == "0")
             File.WriteAllText("gruposFinal.json", jsonString);
     }
 }
-if(args[2] == "1")
+if(args[0] == "1")
 {
     // Leer la ruta del archivo desde el primer argumento
     string filePath = args[1];
@@ -98,7 +98,7 @@ if(args[2] == "1")
     string json2;
     try
     {
-        json2 = File.ReadAllText(filePath);
+        json2 = File.ReadAllText(fileSegundos);
     }
     catch (Exception ex)
     {
@@ -130,6 +130,7 @@ if(args[2] == "1")
             Cancion can = can1[indiceAleatorio1];
                 grupo.temas.Add(can);
             can = can2[indiceAleatorio2];
+            grupo.temas.Add(can);
             can1.RemoveAt(indiceAleatorio1);
             can2.RemoveAt(indiceAleatorio2);
             grupo.grupo = g;
